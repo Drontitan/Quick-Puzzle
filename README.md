@@ -411,7 +411,7 @@ Also, be sure to have `git` available in your PATH, `npm` might need it (You can
 
 ## Install Project
 
-    $ git clone 
+    $ git clone  https://github.com/Drontitan/Quick-Puzzle.git
     $ cd BrainStromers
     $ npm install
 
