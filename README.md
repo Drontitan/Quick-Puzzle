@@ -820,7 +820,7 @@ With these Qs we attempting to assess Emotional Intelligence of the user.
 
 ## Hosting 
 
-![Firebase](https://img.shields.io/badge/Firebase-039BE5?style=for-the-badge&logo=Firebase&logoColor=white)
+![Render](https://img.shields.io/badge/Render-%46E3B7.svg?style=for-the-badge&logo=render&logoColor=white)
 
 # Project Set-up
 ## Install Node
@@ -838,7 +838,7 @@ Also, be sure to have `git` available in your PATH, `npm` might need it (You can
 
 ## Install Project
 
-    $ git clone 
+    $ git clone https://github.com/Drontitan/Quick-Puzzle.git
     $ cd BrainStromers
     $ npm install
 
