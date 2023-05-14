@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Brain Stromer
 
 <p align="center">
@@ -852,4 +852,3 @@ This project uses Firebase technology, to configure this project for your self c
 - izitoast: https://izitoast.marcelodolza.com/
 - Charts: https://www.highcharts.com
 - Story Images: From [Gencraft Ai](https://gencraft.com/generate)
->>>>>>> 0afb79b2f45367336a3b3b84d54937eddf1c80c2
