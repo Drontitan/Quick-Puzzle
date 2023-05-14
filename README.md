@@ -393,7 +393,7 @@ With these Qs we attempting to assess Emotional Intelligence of the user.
 
 ## Hosting 
 
-![Firebase](https://img.shields.io/badge/Firebase-039BE5?style=for-the-badge&logo=Firebase&logoColor=white)
+![Render](https://img.shields.io/badge/Render-%46E3B7.svg?style=for-the-badge&logo=render&logoColor=white)
 
 # Project Set-up
 ## Install Node
