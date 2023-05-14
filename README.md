@@ -423,5 +423,4 @@ This project uses Firebase technology, to configure this project for your self c
 # Credits
 - izitoast: https://izitoast.marcelodolza.com/
 - Charts: https://www.highcharts.com
-- Story Images: From [Gencraft Ai](https://gencraft.com/generate)#   Q u i c k - P u z z l e  
- 
+- Story Images: From [Gencraft Ai](https://gencraft.com/generate)
