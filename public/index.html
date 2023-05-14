@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- Meta data  -->
+    <meta property="og:title" content="elementalQuests">
+    <meta property="og:description"
+        content="An innovative experience that blends the thrill of a treasure hunt with the power of storytelling and puzzles to provide a one-of-a-kind soft skills assessment experience.">
+    <meta property="og:image" itemprop="image" content="./assets/images/logo.png">
+    <meta property="og:url" content="https://elemental-quests.glitch.me">
+
+    <!-- Main Link Tags  -->
+    <link href="./assets/images/logo.png" rel="icon" type="image/png" sizes="16x16">
+    <link href="./assets/images/logo.png" rel="icon" type="image/png" sizes="32x32">
+
+    <title>Brain Stromer | login </title>
+
+    <!-- izitoast -->
+    <link rel="stylesheet" type="text/css" href="./styles/iziToast.min.css">
+    <script src="./scripts/iziToast.min.js"></script>
+
+    <!-- css -->
+    <link rel="stylesheet" href="./styles/login.min.css">
+
+    <!-- scripts -->
+    <script src="./scripts/firebase-login.js" type="module"></script>
+</head>
+
+<body style="background: radial-gradient(
+    circle,
+    rgb(10, 13, 37) 0%,
+    rgb(7, 10, 33) 100%
+   );;">
+    <!-- loader -->
+    <div  style="background: radial-gradient(
+        circle,
+        rgb(6, 16, 90) 0%,
+        rgb(6, 8, 31) 100%
+       );" class="loader-container">
+        <div   class="mov">
+            BrainStromer
+        </div>
+        <div style="color: rgb(198, 13, 13);" class="loader">
+            Brain<b>Stromer</b>
+        </div>
+    </div>
+    <div class="holder" style="background: radial-gradient(
+        circle,
+        rgb(24, 41, 177) 0%,
+        rgb(15, 25, 104) 100%
+       );;">
+        <div class="form-holder">
+            <div style="color:white;"  class="app-name">Brain<b> Stromer</b></div>
+            <form action="javascript:void(0)" style="color:white;">
+
+                <div  class="header login-inp" style="color:white;">Sign in</div>
+                <div class="header signup-inp">Create Account</div>
+                <div class="header reset-inp">Reset Password</div>
+                <div class="header admin-inp">Admin Dashboard</div>
+
+                <label  style="color:white;" for="email" class="login-inp reset-inp signup-inp admin-inp">Email Address</label>
+                <input  type="email" required id="email" name="email" class="login-inp reset-inp signup-inp admin-inp">
+
+                <br>
+
+                <label style="color:white;" for="password" class="login-inp signup-inp admin-inp">Password</label>
+                <input type="password" required id="password" name="password" class="login-inp signup-inp admin-inp">
+                <span style="color:white;" class="login-inp" id="pass-span">Forgot password ? <a style="color:white;" href="/?type=reset">reset password</a>
+                </span>
+                <br>
+
+                <label style="color:white;" for="confirm-password" class="signup-inp">Confirm Password</label>
+                <input type="password" id="confirm-password" name="confirm-password" class="signup-inp">
+
+                <br>
+
+                <button style="color:white;background: radial-gradient(
+                    circle,
+                    rgb(36, 59, 226) 0%,
+                    rgb(5, 13, 71) 100%
+                   );;" type="submit" id="submit-sign-up" class="signup-inp">
+                    sign up
+                    <div class="btn-loader"></div>
+                </button>
+
+                <span style="color:white;" class="signup-inp">Already have an account ?  <a  style="color:rgb(13, 183, 225);text-decoration: none;" href="/?type=login">  login</a> </span>
+
+                <button  style="color:white;background: radial-gradient(
+                    circle,
+                    rgb(36, 59, 226) 0%,
+                    rgb(5, 13, 71) 100%
+                   );;" type="submit" id="submit-login" class="login-inp">
+                    log in
+                    <div class="btn-loader"></div>
+                </button>
+
+                <span style="color:white;" class="login-inp">Don't have an account ? <a style="color:white;" href="/?type=signup">create one</a> </span>
+
+                <button type="submit" id="submit-logout">
+                    log out
+                    <div class="btn-loader"></div>
+                </button>
+
+                <span style="color:white;" class="reset-inp">Enter your Email Address to receive password reset link</span>
+                <button style="background: radial-gradient(
+                    circle,
+                    rgb(16, 28, 119) 0%,
+                    rgb(11, 22, 106) 100%
+                   );" type="submit" id="submit-reset-password" class="reset-inp">
+                    Get Email
+                    <div class="btn-loader"></div>
+                </button>
+
+                <button style="color:white;background: radial-gradient(
+                    circle,
+                    rgb(36, 59, 226) 0%,
+                    rgb(5, 13, 71) 100%
+                   );;" type="submit" class="admin-inp" id="submit-admin-inp">
+                    Admin Log-in
+                    <div class="btn-loader"></div>
+                </button>
+            </form>
+
+            <div style="color:white;" id="footer"> <a style="color:white;text-decoration: none;" href="?type=admin">Admin Login</a> <a style="color:white;text-decoration: none;" href="?type=login"
+                    class="signup-inp reset-inp admin-inp">User login</a></div>
+        </div>
+        <div style="background: radial-gradient(
+            circle,
+            rgb(39, 56, 183) 0%,
+            rgb(7, 10, 33) 100%
+           );;" class="image-holder">
+            <img  style="height: 100%;opacity: 0.49;"  src="./assets/images/bg.png" alt="" srcset="">
+            <div style="color:white;display: flex;justify-content: center;align-items: center;flex-direction: column;" id="tagline">
+                  
+                  <div  style="background: radial-gradient(
+                    circle,
+                    rgb(24, 24, 193) 0%,
+                    rgb(7, 43, 79) 100%
+                   );border-radius: 8px;color: rgb(224, 227, 232);margin: 10px;padding: 5px;opacity: 0.7;">World Challenge Your Skills !</div>  
+                   <div style="font-weight: bolder;">Welcome to Brain Stromer !</div>  
+                   <div style="background: radial-gradient(
+                    circle,
+                    rgb(24, 24, 193) 0%,
+                    rgb(7, 43, 79) 100%
+                   );border-radius: 8px;color: rgb(171, 172, 173);margin: 10px;padding: 5px;opacity: 0.7;">We Help to Assess it ! </div>  
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Meta data  -->
+    <meta property="og:title" content="elementalQuests">
+    <meta property="og:description"
+        content="An innovative experience that blends the thrill of a treasure hunt with the power of storytelling and puzzles to provide a one-of-a-kind soft skills assessment experience.">
+    <meta property="og:image" itemprop="image" content="./../assets/images/logo.png">
+    <meta property="og:url" content="https://elemental-quests.glitch.me">
+
+    <!-- Main Link Tags  -->
+    <link href="./../assets/images/logo.png" rel="icon" type="image/png" sizes="16x16">
+    <link href="./../assets/images/logo.png" rel="icon" type="image/png" sizes="32x32">
+
+    <title>Combination Gain | Brain Stromer</title>
+
+    <!-- izitoast -->
+    <link rel="stylesheet" type="text/css" href="./styles/iziToast.min.css">
+    <script src="./scripts/iziToast.min.js"></script>
+
+    <!-- styles added -->
+    <link rel="stylesheet" href="./../styles/game2.min.css">
+    <link rel="stylesheet" href="./../styles/game4.min.css">
+
+    <!-- scripts -->
+    <script src="./../scripts/gen-instructions.js" defer></script>
+    <script src="./../scripts/game-nav.js" defer></script>
+    <script src="./../scripts/game-4.js" defer></script>
+
+</head>
+
+<body style="background: radial-gradient(
+    circle,
+    rgb(10, 13, 37) 0%,
+    rgb(7, 10, 33) 100%
+   );;">
+
+    <!-- loader -->
+    <div  style="background: radial-gradient(
+        circle,
+        rgb(6, 16, 90) 0%,
+        rgb(6, 8, 31) 100%
+       );" class="loader-container">
+        <div   class="mov">
+            BrainStromer
+        </div>
+        <div style="color: rgb(198, 13, 13);" class="loader">
+            Brain<b>Stromer</b>
+        </div>
+    </div>
+
+    <!-- nav bar -->
+    <nav style="background: radial-gradient(
+        circle,
+        rgb(16, 38, 203) 0%,
+        rgb(11, 22, 106) 100%
+       ); box-shadow:  0 8px 6px -6px black;"> 
+        <div class="nav-container">
+            <div style="color: white;" id="appName">Brain<b>Stromer</b></div>
+
+            <div id="links">
+                <button style="color: white;" id="instructions-nav">Instructions</button>
+                <button style="color: white;" id="story-nav">Story</button>
+                <!-- <button id="logout">logout</button> -->
+            </div>
+        </div>
+    </nav>
+
+    <!-- game area -->
+    <div class="game-container">
+        <div style="color: white;" class="wrapper">
+
+            <div  style="color: rgb(241, 147, 7);" class="game-header">Combination Gain</div>
+            <p style="color: white;">
+                In the Below screen, partical will start popping up once you start by clicking on the one present
+                currently. <br> <br>
+                The particals are color coded as follows: <br>
+                <span class="text-bg red">Car</span> -> Red <br>
+                <span class="text-bg gold">Pencil</span> -> yellow <br>
+                <!-- <span class="text-bg silver">Silver</span> -> silver <br> -->
+
+                <br><br>
+                You have to collect the amount as close as possible without exceeding the below limits: <br>
+                <span class="text-bg red">Car</span> -> 100 <br>
+                <span class="text-bg gold">Pencil</span> -> 50 <br>
+                <!-- <span class="text-bg silver">Silver</span> -> 20 <br> -->
+                <br><br>
+            </p>
+
+            <div id="game-screen">
+                <!-- <div class="mineral red">
+                    <div class="value">
+                        3
+                    </div>
+                </div> -->
+            </div>
+
+            <div class="ans-holder">
+                <div class="button-holder">
+                    <button style="background: radial-gradient(
+                        circle,
+                        rgb(16, 28, 119) 0%,
+                        rgb(11, 22, 106) 100%
+                       );" id="ans-btn" class="sub-btn">
+                        Submit
+                        <div class="btn-loader"></div>
+                    </button>
+                </div>
+            </div>
+            <div style="color: rgb(241, 147, 7);" class="game-header">
+                Special Actions:
+            </div>
+            <button style="background: radial-gradient(
+                circle,
+                rgb(16, 28, 119) 0%,
+                rgb(11, 22, 106) 100%
+               );" id="return-to-game" class="sub-btn">
+                return to game
+                <div class="btn-loader"></div>
+            </button>
+
+            <div class="ans-holder">
+                <button style="background: radial-gradient(
+                    circle,
+                    rgb(16, 28, 119) 0%,
+                    rgb(11, 22, 106) 100%
+                   );" id="skip-btn" class="sub-btn">
+                    Skip
+                    <div class="btn-loader"></div>
+                </button>
+                <button  style="background: radial-gradient(
+                    circle,
+                    rgb(16, 28, 119) 0%,
+                    rgb(11, 22, 106) 100%
+                   );"id="end-test-btn" class="sub-btn">
+                    End Test
+                    <div class="btn-loader"></div>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- story area -->
+    <div style="background: radial-gradient(
+        circle,
+        rgb(10, 13, 37) 0%,
+        rgb(7, 10, 33) 100%
+       );" class="game-container pop-page" id="story">
+        <div style="background: radial-gradient(
+            circle,
+            rgb(16, 38, 203) 0%,
+            rgb(11, 22, 106) 100%
+           ); box-shadow:  0 8px 6px -6px black;"class="nav-container">
+            <div style="color: white;" id="appName">Brain<b>Stromer</b></div>
+        </div>
+
+        <div class="wrapper" id="story-wrapper">
+            <div style="color: rgb(241, 147, 7);"class="game-header">
+                Story:
+            </div>
+            <p style="color: white;">
+                <img src="./../assets/story-1/three.jpg" alt="" srcset="">
+                <br> <br>
+                Having finally beaten the Ghost high score, you successfully completed that puzzle. 
+                The next step requires combining the Clay particals on the ground to make two toys.
+                <br>
+                1. Car
+                <br>
+                2. Pencil 
+            </p>
+
+            <div  style="color: rgb(241, 147, 7);" class="game-header">
+                Current Game Instructions:
+            </div>
+            <ol style="color: white;">
+                <li>Every appearing partical required considered as  amount/count written on it's face that is the amount of partical
+                    gain.</li>
+                <li>Your current collection amount won't be shown on the screen.</li>
+                <li>
+                    Once you are sure that you have collected the necessary amount, hit <span
+                    style="color: rgb(6, 6, 6);"  class="text-bg">submit</span>
+                </li>
+                <li>
+                    Collecting more than given amount will result in incorrect attempt.
+                </li>
+                <li>When Making, Partical the toy may break might , beware !</li>
+          
+                <li>
+                    If you find yourself at a dead-end, you can refer back to the relevant game information. <br>
+                    
+                </li>
+                <li>
+                    But remember the clock is ticking.
+                </li>
+
+            </ol>
+
+            <button style="background: radial-gradient(
+                circle,
+                rgb(16, 28, 119) 0%,
+                rgb(11, 22, 106) 100%
+               );" id="story-btn">Move Next</button>
+        </div>
+    </div>
+
+    <!-- instructions area -->
+    <div  style="background: radial-gradient(
+        circle,
+        rgb(10, 13, 37) 0%,
+        rgb(7, 10, 33) 100%
+       );color: white;"class="game-container pop-page" id="instructions">
+        <div style="background: radial-gradient(
+            circle,
+            rgb(35, 55, 203) 0%,
+            rgb(24, 36, 126) 100%
+           );color: white;" class="nav-container">
+            <div style="color: white;" id="appName">Brain<b>Stromer</b></div>
+        </div>
+
+        <div class="wrapper">
+            <div style="color:rgb(253, 156, 11)" class="game-header">
+                Overall Game Instructions:
+            </div>
+
+            <ol id="instruction-ol">
+
+            </ol>
+
+            <button style="background: radial-gradient(
+                circle,
+                rgb(12, 27, 145) 0%,
+                rgb(26, 47, 205) 100%
+               );"id="instructions-btn"> I Understand</button>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

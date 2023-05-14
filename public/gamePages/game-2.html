@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Meta data  -->
+    <meta property="og:title" content="elementalQuests">
+    <meta property="og:description"
+        content="An innovative experience that blends the thrill of a treasure hunt with the power of storytelling and puzzles to provide a one-of-a-kind soft skills assessment experience.">
+    <meta property="og:image" itemprop="image" content="./../assets/images/logo.png">
+    <meta property="og:url" content="https://elemental-quests.glitch.me">
+
+    <!-- Main Link Tags  -->
+    <link href="./../assets/images/logo.png" rel="icon" type="image/png" sizes="16x16">
+    <link href="./../assets/images/logo.png" rel="icon" type="image/png" sizes="32x32">
+
+    <title>Rearrange Stones | Brain Stromer</title>
+
+    <!-- izitoast -->
+    <link rel="stylesheet" type="text/css" href="./styles/iziToast.min.css">
+    <script src="./scripts/iziToast.min.js"></script>
+
+    <!-- styles added -->
+    <link rel="stylesheet" href="./../styles/game2.min.css">
+
+    <!-- scripts -->
+    <script src="./../scripts/gen-instructions.js" defer></script>
+    <script src="./../scripts/game-nav.js" defer></script>
+    <script src="./../scripts/game-1.js" defer></script>
+
+</head>
+
+<body style="background: radial-gradient(
+    circle,
+    rgb(10, 13, 37) 0%,
+    rgb(7, 10, 33) 100%
+   );;">
+
+    <!-- loader -->
+    <div  style="background: radial-gradient(
+        circle,
+        rgb(6, 16, 90) 0%,
+        rgb(6, 8, 31) 100%
+       );" class="loader-container">
+        <div   class="mov">
+            BrainStromer
+        </div>
+        <div style="color: rgb(198, 13, 13);" class="loader">
+            Brain<b>Stromer</b>
+        </div>
+    </div>
+
+    <!-- nav bar -->
+    <nav style="background: radial-gradient(
+        circle,
+        rgb(16, 38, 203) 0%,
+        rgb(11, 22, 106) 100%
+       ); box-shadow:  0 8px 6px -6px black;">
+        <div  class="nav-container">
+            <div style="color: white;" id="appName">Brain<b>Stromer</b></div>
+
+            <div id="links">
+                <button style="color: white;" id="instructions-nav">Instructions</button>
+                <button style="color: white;" id="story-nav">Story</button>
+                <!-- <button id="logout">logout</button> -->
+            </div>
+        </div>
+    </nav>
+
+    <!-- game area -->
+    <div class="game-container">
+        <div class="wrapper">
+
+            <div  style="color: white;" class="game-header">Rearrange Stones</div>
+            <p style="color: white;">
+                <img src="./../assets/story-1/two.jpg" alt="">
+                <br><br>
+                9 stones  are placed in a row on the ground. <br>
+               <br>
+                <span   style="color: rgb(11, 11, 11);"class="text-bg">A</span>,
+                <span  style="color: rgb(11, 11, 11);"class="text-bg">B</span>,
+                <span  style="color: rgb(11, 11, 11);"class="text-bg">C</span>,
+                <span  style="color: rgb(11, 11, 11);"class="text-bg">D</span>,
+                <span  style="color: rgb(11, 11, 11);"class="text-bg">E</span>,
+                <span  style="color: rgb(11, 11, 11);"class="text-bg">F</span>,
+                <span  style="color: rgb(11, 11, 11);"class="text-bg">G</span>,
+                <span  style="color: rgb(11, 11, 11);"class="text-bg">H</span>,
+                <span  style="color: rgb(11, 11, 11);"class="text-bg">I</span>. <br> <br>
+
+                Deduce the correct order from the given facts about them and write the correct arrangement of the
+                stones:
+
+            <ol style="color: white;"> 
+                <li>There are 1 stones between <span style="color: rgb(11, 11, 11);" class="text-bg">C</span> and <span
+                    style="color: rgb(11, 11, 11);"  class="text-bg">H</span></li>
+                <li><span style="color: rgb(11, 11, 11);"  class="text-bg">I</span> is between <span style="color: rgb(11, 11, 11);" class="text-bg">A</span> and <span
+                    style="color: rgb(11, 11, 11);"    class="text-bg">B</span></li>
+                <li><span style="color: rgb(11, 11, 11);" class="text-bg">B</span> is immediately right to <span  style="color: rgb(11, 11, 11);"class="text-bg">D</span></li>
+                <li><span style="color: rgb(11, 11, 11);" class="text-bg">C</span> is immediately left to <span style="color: rgb(11, 11, 11);" class="text-bg">F</span></li>
+                <li><span style="color: rgb(11, 11, 11);" class="text-bg">C</span> is immediately right to <span style="color: rgb(11, 11, 11);" class="text-bg">G</span></li>
+                <li><span style="color: rgb(11, 11, 11);" class="text-bg">E</span> is  right to <span style="color: rgb(11, 11, 11);" class="text-bg">H</span></li>
+                <li><span style="color: rgb(11, 11, 11);" class="text-bg">H</span> is immediately left to <span style="color: rgb(11, 11, 11);" class="text-bg">A</span></li>
+            </ol>
+            <br><br>
+
+            <p style="color: white;">
+                <b>Note:</b> Write answer  without any space in between; <br>
+                <i> e.g.: <span class="text-bg">ABC</span> </i>
+            </p>
+            </p>
+
+
+            <div class="ans-holder">
+                <input type="text" id="answer" placeholder="Enter key to open the lab">
+                <button style="background: radial-gradient(
+                    circle,
+                    rgb(14, 24, 103) 0%,
+                    rgb(11, 22, 106) 100%
+                   );" id="ans-btn" class="sub-btn">
+                    Submit
+                    <div class="btn-loader"></div>
+                </button>
+            </div>
+
+            <div  style="color:rgb(247, 133, 11)"class="game-header">
+                Special Actions:
+            </div>
+            <button id="return-to-game" class="sub-btn">
+                return to game
+                <div class="btn-loader"></div>
+            </button>
+            <div class="ans-holder">
+                <button  style="background: radial-gradient(
+                    circle,
+                    rgb(14, 24, 103) 0%,
+                    rgb(11, 22, 106) 100%
+                   );" id="skip-btn" class="sub-btn">
+                    Skip
+                    <div class="btn-loader"></div>
+                </button>
+                <button style="background: radial-gradient(
+                    circle,
+                    rgb(14, 24, 103) 0%,
+                    rgb(11, 22, 106) 100%
+                   );" id="end-test-btn" class="sub-btn">
+                    End Test
+                    <div class="btn-loader"></div>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- story area -->
+    <div style="background: radial-gradient(
+        circle,
+        rgb(10, 13, 37) 0%,
+        rgb(7, 10, 33) 100%
+       );" class="game-container pop-page" id="story">
+        <div style="background: radial-gradient(
+            circle,
+            rgb(16, 38, 203) 0%,
+            rgb(11, 22, 106) 100%
+           ); box-shadow:  0 8px 6px -6px black;"  class="nav-container">
+            <div style="color: white;" id="appName">Brain<b>Stromer</b></div>
+        </div>
+
+        <div class="wrapper">
+            <div  style="color: rgb(241, 147, 7);" class="game-header" id="story-wrapper">
+                Story:
+            </div>
+            <p style="color: white;">
+                <img src="./../assets/story-1/tow.jpg" alt="" srcset="">
+                <br><br>
+                After answering the last puzzle, Ghost assigned you the new task of rearranging the Stones
+                accoring to the position he told to you  .
+                <br>
+                The given stones are begin in the random order .You have to arrange them in the correct
+                order 
+                <br>
+                The Stones are named as the English alphabet (A,B...Z) (Dont consider is as order of alphabet 
+                it can defer )
+                <br>
+                Keep in the mind that you need to complete this taks as soon as possible 
+            <ul style="color: white;">
+                <li>
+                    Don't touch the other things , for need to be focused
+                </li>
+                <li>
+                    Remember, the order matters! Don't mess it up
+                </li>
+                <li>
+                    If the stones look similar arrange them in the order you want 
+                    but the order of the stone should be according to the smallest 
+                    position first
+                </li>
+            </ul>
+            <br><br>
+            </p>
+            <p style="color: white;">
+                Follow the given instructions and figure out the correct order.
+            </p>
+
+            <div style="color: rgb(241, 147, 7);" class="game-header">
+                Current Game Instructions:
+            </div>
+            <ol style="color: white;">
+                <li>Read the instructions carefully</li>
+                <li>Write answer number without giving any space</li>
+            </ol>
+
+            <button  style="background: radial-gradient(
+                circle,
+                rgb(16, 28, 119) 0%,
+                rgb(11, 22, 106) 100%
+               );"  id="story-btn">Move Next</button>
+        </div>
+    </div>
+
+    <!-- instructions area -->
+    <div style="background: radial-gradient(
+        circle,
+        rgb(10, 13, 37) 0%,
+        rgb(7, 10, 33) 100%
+       );color: white;" class="game-container pop-page" id="instructions">
+        <div style="background: radial-gradient(
+            circle,
+            rgb(35, 55, 203) 0%,
+            rgb(24, 36, 126) 100%
+           );color: white;" class="nav-container">
+            <div style="color: white;" id="appName">Brain<b>Stromer</b></div>
+        </div>
+
+        <div  class="wrapper">
+            <div style="color:rgb(253, 156, 11)" class="game-header">
+                Overall Game Instructions:
+            </div>
+
+            <ol id="instruction-ol">
+
+            </ol>
+
+            <button style="background: radial-gradient(
+                circle,
+                rgb(12, 27, 145) 0%,
+                rgb(26, 47, 205) 100%
+               );" id="instructions-btn"> I Understand</button>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Meta data  -->
+    <meta property="og:title" content="elementalQuests">
+    <meta property="og:description"
+        content="An innovative experience that blends the thrill of a treasure hunt with the power of storytelling and puzzles to provide a one-of-a-kind soft skills assessment experience.">
+    <meta property="og:image" itemprop="image" content="./../assets/images/logo.png">
+    <meta property="og:url" content="https://elemental-quests.glitch.me">
+
+    <!-- Main Link Tags  -->
+    <link href="./../assets/images/logo.png" rel="icon" type="image/png" sizes="16x16">
+    <link href="./../assets/images/logo.png" rel="icon" type="image/png" sizes="32x32">
+
+    <title>Word Transform | Brain Stromer</title>
+
+    <!-- izitoast -->
+    <link rel="stylesheet" type="text/css" href="./styles/iziToast.min.css">
+    <script src="./scripts/iziToast.min.js"></script>
+
+    <!-- styles added -->
+    <link rel="stylesheet" href="./../styles/game1.min.css">
+
+    <!-- scripts -->
+    <script src="./../scripts/gen-instructions.js" defer></script>
+    <script src="./../scripts/game-nav.js" defer></script>
+    <script src="./../scripts/game-1.js" defer></script>
+
+</head>
+
+<body  style="background: radial-gradient(
+    circle,
+    rgb(10, 13, 37) 0%,
+    rgb(7, 10, 33) 100%
+   );">
+
+    <!-- loader -->
+    <div  style="background: radial-gradient(
+        circle,
+        rgb(6, 16, 90) 0%,
+        rgb(6, 8, 31) 100%
+       );" class="loader-container">
+        <div   class="mov">
+            BrainStromer
+        </div>
+        <div style="color: rgb(198, 13, 13);" class="loader">
+            Brain<b>Stromer</b>
+        </div>
+    </div>
+
+    <!-- nav bar -->
+    <nav style="background: radial-gradient(
+        circle,
+        rgb(16, 38, 203) 0%,
+        rgb(11, 22, 106) 100%
+       ); box-shadow:  0 8px 6px -6px black;">
+        <div style="color: white;" class="nav-container">
+            <div style="color: white;" id="appName">Brain<b>Stromer</b></div>
+
+            <div id="links">
+                <button style="color: white;" id="instructions-nav">Instructions</button>
+                <button style="color: white;" id="story-nav">Story</button>
+                <!-- <button id="logout">logout</button> -->
+            </div>
+        </div>
+    </nav>
+
+    <!-- game area -->
+    <div class="game-container">
+        <div class="wrapper">
+
+            <div  style="color: white;" class="game-header">Word Transform</div>
+            <p style="color: white;">
+                As per the given scenario, this given random encryption <span  style="color: rgb(7, 7, 7);"class="text-bg">abcdefghi</span> maps to
+                following: <br> <br>
+                <span  style="color: rgb(7, 7, 7);" class="text-bg">abcdefghi</span> &rarr; <span  style="color: rgb(10, 10, 10);"class="text-bg">cbkjilhq</span>
+                <br>
+            </p>
+
+            <div style="color: white;" class="map-holder">
+                <div class="map">
+                    <span>a</span>
+                    <arrow>&darr;</arrow>
+                    <span>c</span>
+                </div>
+                <div class="map">
+                    <span>B</span>
+                    <arrow>&darr;</arrow>
+                    <span>B</span>
+                </div>
+                <div class="map">
+                    <span>C</span>
+                    <arrow>&darr;</arrow>
+                    <span>K</span>
+                </div>
+                <div class="map">
+                    <span>D</span>
+                    <arrow>&darr;</arrow>
+                    <span>J</span>
+                </div>
+                <div class="map">
+                    <span>E</span>
+                    <arrow>&darr;</arrow>
+                    <span>I</span>
+                </div>
+                <div class="map">
+                    <span>F</span>
+                    <arrow>&darr;</arrow>
+                    <span>L</span>
+                </div>
+                <div class="map">
+                    <span>G</span>
+                    <arrow>&darr;</arrow>
+                    <span>I</span>
+                </div>
+                <div class="map">
+                    <span>H</span>
+                    <arrow>&darr;</arrow>
+                    <span>H</span>
+                </div>
+                <div class="map">
+                    <span>I</span>
+                    <arrow>&darr;</arrow>
+                    <span>Q</span>
+                </div>
+            </div>
+
+            <p style="color: white;">
+                What will be the key to unlock the lab's door if the encryption string is <span
+                style="color: rgb(11, 11, 11);"    class="text-bg">jilgqm</span> ?
+            </p>
+
+            <div style="color: white;" class="map-holder">
+                <div class="map">
+                    <span>J</span>
+                    <arrow>&darr;</arrow>
+                    <span>?</span>
+                </div>
+                <div class="map">
+                    <span>I</span>
+                    <arrow>&darr;</arrow>
+                    <span>I</span>
+                </div>
+                <div class="map">
+                    <span>L</span>
+                    <arrow>&darr;</arrow>
+                    <span>?</span>
+                </div>
+                <div class="map">
+                    <span>G</span>
+                    <arrow>&darr;</arrow>
+                    <span>?</span>
+                </div>
+                <div class="map">
+                    <span>Q</span>
+                    <arrow>&darr;</arrow>
+                    <span>?</span>
+                </div>
+                <div class="map">
+                    <span>M</span>
+                    <arrow>&darr;</arrow>
+                    <span>?</span>
+                </div>
+
+            </div>
+
+            <div class="ans-holder">
+                <input type="text" id="answer" placeholder="Enter key to open the lab">
+                <button style="background: radial-gradient(
+                    circle,
+                    rgb(14, 24, 103) 0%,
+                    rgb(11, 22, 106) 100%
+                   );" id="ans-btn" class="sub-btn">
+                    Submit
+                    <div class="btn-loader"></div>
+                </button>
+            </div>
+
+            <div style="color:rgb(247, 133, 11)" class="game-header">
+                Special Actions:
+            </div>
+            <button id="return-to-game" class="sub-btn">
+                return to game
+                <div class="btn-loader"></div>
+            </button>
+
+            <div class="ans-holder">
+
+                <button  style="background: radial-gradient(
+                    circle,
+                    rgb(14, 24, 103) 0%,
+                    rgb(11, 22, 106) 100%
+                   );" id="skip-btn" class="sub-btn">
+                    Skip
+                    <div class="btn-loader"></div>
+                </button>
+                <button style="background: radial-gradient(
+                    circle,
+                    rgb(14, 24, 103) 0%,
+                    rgb(11, 22, 106) 100%
+                   );" id="end-test-btn" class="sub-btn">
+                    End Test
+                    <div class="btn-loader"></div>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- story area -->
+    <div style="background: radial-gradient(
+        circle,
+        rgb(10, 13, 37) 0%,
+        rgb(7, 10, 33) 100%
+       );" class="game-container pop-page" id="story">
+        <div style="background: radial-gradient(
+            circle,
+            rgb(16, 38, 203) 0%,
+            rgb(11, 22, 106) 100%
+           ); box-shadow:  0 8px 6px -6px black;"class="nav-container">
+            <div  style="color: white;" id="appName">Brain<b>Stromer</b></div>
+        </div>
+
+        <div class="wrapper" id="story-wrapper">
+            <div  style="color: rgb(241, 147, 7);" class="game-header">
+                Story:
+            </div>
+            <p style="color: white;">
+                <img  src="./../assets/story-1/one.jpg" alt="">
+                <br >
+                After the exams, You and Your friend Ben ventured into a nearby jungle to explore nature.
+                Jungle encountered mysterious occurrences, and in the panic, Ben fell into a hidden pit. 
+                 To your surprise, a ghost appeared before You, offering to free Ben (if and only if you could answer the puzzle correctly) . 
+                <br><br>
+                Ghost  offered you to answer a 
+                series of puzzle correctly. With determination, You accepted the challenge, solving the
+                ghost's puzzles one by one. As each riddle was solved, the ghost's form weakened, until
+                finally, Beb was rescued from the pit. 
+                <br><br>
+                To release your friend , you need to solve the puzzle first !
+            </p>
+
+            <div style="color: rgb(241, 147, 7);" class="game-header">
+                Current Game Instructions:
+            </div>
+            <ol style="color: white;">
+                <li>Use the example provided to find the answer.</li>
+                <li>Use the derived key to decipher the hidden message.</li>
+                <li>
+                    Type the above obtained code in the given box to find the answer.
+                </li>
+                <li>Points will be awarded for providing correct answers.</li>
+                <li>Bonus points will be given for submitting the correct answer quickly.</li>
+                <li>Points will be deducted for incorrect attempts.</li>
+                <li>Answer is case-Insensitive.</li>
+            </ol>
+
+            <button style="background: radial-gradient(
+                circle,
+                rgb(16, 28, 119) 0%,
+                rgb(11, 22, 106) 100%
+               );" id="story-btn">Move Next</button>
+        </div>
+    </div>
+
+    <!-- instructions area -->
+    <div style="background: radial-gradient(
+        circle,
+        rgb(10, 13, 37) 0%,
+        rgb(7, 10, 33) 100%
+       );box-shadow:  0 8px 6px -6px black;" class="game-container pop-page" id="instructions">
+        <div style="background: radial-gradient(
+            circle,
+            rgb(35, 55, 203) 0%,
+            rgb(24, 36, 126) 100%
+           );color: white;" class="nav-container">
+            <div style="color:white" id="appName">Brain<b>Stromer</b></div>
+        </div>
+
+        <div  style="background: radial-gradient(
+            circle,
+            rgb(10, 13, 37) 0%,
+            rgb(7, 10, 33) 100%
+           );color: white;" class="wrapper">
+            <div style="color:rgb(253, 156, 11)" class="game-header">
+                Overall Game Instructions:
+            </div>
+
+            <ol id="instruction-ol">
+
+            </ol>
+
+            <button style="background: radial-gradient(
+                circle,
+                rgb(12, 27, 145) 0%,
+                rgb(26, 47, 205) 100%
+               );;" id="instructions-btn"> I Understand</button>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

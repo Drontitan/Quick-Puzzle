@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Meta data  -->
+    <meta property="og:title" content="elementalQuests">
+    <meta property="og:description"
+        content="An innovative experience that blends the thrill of a treasure hunt with the power of storytelling and puzzles to provide a one-of-a-kind soft skills assessment experience.">
+    <meta property="og:image" itemprop="image" content="./../assets/images/logo.png">
+    <meta property="og:url" content="https://elemental-quests.glitch.me">
+
+    <!-- Main Link Tags  -->
+    <link href="./../assets/images/logo.png" rel="icon" type="image/png" sizes="16x16">
+    <link href="./../assets/images/logo.png" rel="icon" type="image/png" sizes="32x32">
+
+    <title>Emotions Dilemma | Brain Stromer</title>
+
+    <!-- izitoast -->
+    <link rel="stylesheet" type="text/css" href="./styles/iziToast.min.css">
+    <script src="./scripts/iziToast.min.js"></script>
+
+    <!-- styles added -->
+    <link rel="stylesheet" href="./../styles/game5.min.css">
+
+    <!-- scripts -->
+    <script src="./../scripts/gen-instructions.js" defer></script>
+    <script src="./../scripts/game-nav.js" defer></script>
+    <script src="./../scripts/game-5.js" defer></script>
+
+</head>
+
+<body style="background: radial-gradient(
+    circle,
+    rgb(10, 13, 37) 0%,
+    rgb(7, 10, 33) 100%
+   );;">
+
+    <!-- loader -->
+    <div  style="background: radial-gradient(
+        circle,
+        rgb(6, 16, 90) 0%,
+        rgb(6, 8, 31) 100%
+       );" class="loader-container">
+        <div   class="mov">
+            BrainStromer
+        </div>
+        <div style="color: rgb(198, 13, 13);" class="loader">
+            Brain<b>Stromer</b>
+        </div>
+    </div>
+
+    <!-- nav bar -->
+    <nav style="background: radial-gradient(
+        circle,
+        rgb(16, 38, 203) 0%,
+        rgb(11, 22, 106) 100%
+       ); box-shadow:  0 8px 6px -6px black;">
+        <div class="nav-container">
+            <div style="color: white;" id="appName">Brain<b>Stromer</b></div>
+
+            <div id="links">
+                <button style="color: white;" id="instructions-nav">Instructions</button>
+                <button style="color: white;" id="story-nav">Story</button>
+                <!-- <button id="logout">logout</button> -->
+            </div>
+        </div>
+    </nav>
+
+    <!-- game area -->
+    <div class="game-container">
+        <div style="color: white;" class="wrapper">
+
+            <div style="color: rgb(241, 147, 7);" class="game-header">Emotions Dilemma</div>
+
+            <div style="color: white;" id="question">
+                Do you think Ghost was Friendly ?
+            </div>
+            <div class="ans-holder">
+
+                <button id="ans1" class="sub-btn">
+                    yes
+                    <div class="btn-loader"></div>
+                </button>
+
+                <button id="ans2" class="sub-btn">
+                    no
+                    <div class="btn-loader"></div>
+                </button>
+            </div>
+
+
+            <div style="color: white;" class="game-header">
+                Actions:
+            </div>
+
+
+
+            <button id="return-to-game" class="sub-btn">
+                return to game
+                <div class="btn-loader"></div>
+            </button>
+
+            <div class="ans-holder">
+                <button id="skip-btn" class="sub-btn" style="display: none;">
+                    Skip
+                    <div class="btn-loader"></div>
+                </button>
+
+                <button  id="end-test-btn" class="sub-btn" style="display: none;">
+                    End Test
+                    <div class="btn-loader"></div>
+                </button>
+
+                <button style="background: radial-gradient(
+                    circle,
+                    rgb(16, 28, 119) 0%,
+                    rgb(11, 22, 106) 100%
+                   );"id="end-test-btn-1" class="sub-btn">
+                    End Test
+                    <div class="btn-loader"></div>
+                </button>
+
+                <button style="background: radial-gradient(
+                        circle,
+                        rgb(16, 28, 119) 0%,
+                        rgb(11, 22, 106) 100%
+                       );"id="ans-btn" class="sub-btn">
+                    Submit
+                    <div class="btn-loader"></div>
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- story area -->
+    <div style="background: radial-gradient(
+        circle,
+        rgb(10, 13, 37) 0%,
+        rgb(7, 10, 33) 100%
+       );"class="game-container pop-page" id="story">
+        <div style="background: radial-gradient(
+            circle,
+            rgb(16, 38, 203) 0%,
+            rgb(11, 22, 106) 100%
+           ); box-shadow:  0 8px 6px -6px black;"class="nav-container">
+            <div style="color: white;" id="appName">Brain<b>Stromer</b></div>
+        </div>
+
+        <div class="wrapper" id="story-wrapper">
+            <div style="color: rgb(241, 147, 7);"class="game-header">
+                Story:
+            </div>
+            <p style="color: white;">
+                <img src="./../assets/story-1/five.jpg" alt="" srcset="">
+                <br><br>
+                Now that Ben is released its time to say goodbye to the ghost  🥲.
+                <br><br>
+               You need to answer some questions releated to the Ghost (Admin want to know 😎)
+            </p>
+
+            <div style="color: rgb(241, 147, 7);" class="game-header">
+                Current Game Instructions:
+            </div>
+            <ol style="color: white;">
+                <li>
+                    Answer upcoming questions as per your understanding of the Ghost and the situation you are in.
+                </li>
+                
+            </ol>
+
+            <button style="background: radial-gradient(
+                circle,
+                rgb(16, 28, 119) 0%,
+                rgb(11, 22, 106) 100%
+               );" id="story-btn" id="story-btn">Move Next</button>
+        </div>
+    </div>
+
+    <!-- instructions area -->
+    <div  style="background: radial-gradient(
+        circle,
+        rgb(10, 13, 37) 0%,
+        rgb(7, 10, 33) 100%
+       );color: white;" class="game-container pop-page" id="instructions">
+        <div style="background: radial-gradient(
+            circle,
+            rgb(35, 55, 203) 0%,
+            rgb(24, 36, 126) 100%
+           );color: white;"class="nav-container">
+            <div style="color: white;" id="appName">Brain<b>Stromer</b></div>
+        </div>
+
+        <div class="wrapper">
+            <div style="color:rgb(253, 156, 11)" class="game-header">
+                Overall Game Instructions:
+            </div>
+
+            <ol id="instruction-ol">
+
+            </ol>
+
+            <button style="background: radial-gradient(
+                circle,
+                rgb(12, 27, 145) 0%,
+                rgb(26, 47, 205) 100%
+               );"id="instructions-btn"> I Understand</button>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
