@@ -223,7 +223,7 @@ The stones can be of same and different size
 
 <details> 
   <summary>Beware solution below, click to see? </summary>
-  G,C,F,H,A,I,D,B,E
+  GCFHAIDBE
 </details>
 
 ## Motive
